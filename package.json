@@ -1,12 +1,15 @@
 {
   "name": "@koadit/react-seo",
   "version": "1.0.0",
-  "description": "A React SEO package for managing meta tags, Open Graph, Twitter Cards, and structured data per page.",
+  "description": "React SEO component library for managing meta tags, Open Graph, Twitter Cards, JSON-LD structured data, and canonical URLs per page — enabling Google to detect and index every individual page",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/types/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
   ],
   "exports": {
     ".": {
@@ -34,8 +37,24 @@
     "structured-data",
     "koadit"
   ],
-  "author": "Koadit",
+  "author": "KOADIT Digital Solutions",
   "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oluokunkabiru/react-seo"
+  },
+  "bugs": {
+    "url": "https://github.com/oluokunkabiru/react-seo/issues"
+  },
+  "homepage": "https://github.com/oluokunkabiru/react-seo#readme",
   "peerDependencies": {
     "react": ">=17.0.0",
     "react-dom": ">=17.0.0"

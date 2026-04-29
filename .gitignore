@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production
+/dist
+/build
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+/coverage
+*.lcov
+
+# Build
+.cache/
+*.tsbuildinfo
