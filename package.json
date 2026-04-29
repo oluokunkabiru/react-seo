@@ -1,6 +1,6 @@
 {
   "name": "react-seo-kit",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React SEO component library for managing meta tags, Open Graph, Twitter Cards, JSON-LD structured data, and canonical URLs per page — enabling Google to detect and index every individual page",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
