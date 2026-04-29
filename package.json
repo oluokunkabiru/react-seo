@@ -1,11 +1,51 @@
 {
-  "name": "react-seo",
+  "name": "@koadit/react-seo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "description": "A React SEO package for managing meta tags, Open Graph, Twitter Cards, and structured data per page.",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "build:cjs": "tsc -p tsconfig.cjs.json",
+    "build:types": "tsc -p tsconfig.types.json",
+    "clean": "rm -rf dist",
+    "prebuild": "npm run clean",
+    "dev": "tsc -p tsconfig.esm.json --watch"
+  },
+  "keywords": [
+    "react",
+    "seo",
+    "meta",
+    "helmet",
+    "open-graph",
+    "twitter-card",
+    "structured-data",
+    "koadit"
+  ],
+  "author": "Koadit",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "dependencies": {
+    "react-helmet-async": "^2.0.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "typescript": "^5.4.5"
+  }
 }
